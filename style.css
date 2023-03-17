@@ -218,7 +218,7 @@ details[open]>summary:before {
     margin: 0;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
 
     /* Main grid options. */
     .grid-container {
@@ -229,7 +229,7 @@ details[open]>summary:before {
         bottom: 1%;
 
         grid-template-columns: 1fr;
-        grid-template-rows: min-content 30fr 30fr 30fr 10fr 10fr;
+        grid-template-rows: min-content 100vh 100vh 50vh min-content 10vh;
 
         display: grid;
         gap: 5px;
@@ -258,7 +258,7 @@ details[open]>summary:before {
 
     .grid-item-file-structure {
         grid-column: 1;
-        grid-row: 2;
+        grid-row: 4;
         overflow: scroll;
     }
 
@@ -283,7 +283,7 @@ details[open]>summary:before {
         text-align: left;
         text-align: left;
         grid-column: 1;
-        grid-row: 4;
+        grid-row: 2;
     }
 
     .grid-item-options {
