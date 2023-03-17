@@ -276,7 +276,7 @@ details[open]>summary:before {
     }
 
     .grid-item-code {
-        background-color: red
+        background-color: red;
         padding: 10px;
         text-align: left;
         text-align: left;
