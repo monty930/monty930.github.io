@@ -229,7 +229,7 @@ details[open]>summary:before {
         bottom: 1%;
 
         grid-template-columns: 1fr;
-        grid-template-rows: min-content 100vh 50vh 50vh min-content 50vh;
+        grid-template-rows: min-content 100vh 50vh 50vh min-content 100vh;
 
         display: grid;
         gap: 5px;
