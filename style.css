@@ -229,7 +229,7 @@ details[open]>summary:before {
         bottom: 1%;
 
         grid-template-columns: 1fr;
-        grid-template-rows: min-content 100vh 100vh 50vh min-content 10vh;
+        grid-template-rows: min-content 100vh 50vh 50vh min-content 50vh;
 
         display: grid;
         gap: 5px;
@@ -239,14 +239,14 @@ details[open]>summary:before {
         overflow: scroll;
     }
 
-    .grid-item {
-        /* background-color: transparent; */
+    /* .grid-item {
+        background-color: transparent;
         background-color: var(--background-menu);
         color: var(--text-color);
         text-align: center;
         padding: 5px;
         font-size: medium;
-    }
+    } */
 
     .grid-item-menu-bar {
         background-color: transparent;
