@@ -9,7 +9,7 @@ body {
     font-family: Arial;
 }
 
-/* Background image transparency. */
+/* Przezroczystość tła. */
 body::after {
     content: "";
     background: url(background-image.jpg);
@@ -22,7 +22,7 @@ body::after {
     z-index: -1;
 }
 
-/* Main grid options. */
+/* Główne opcje grida. */
 .grid-container {
     position: fixed;
     top: 1%;
@@ -40,7 +40,6 @@ body::after {
 }
 
 .grid-item {
-    /* background-color: transparent; */
     background-color: var(--background-menu);
     color: var(--text-color);
     text-align: center;
@@ -218,40 +217,17 @@ details[open]>summary:before {
     margin: 0;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
 
-    /* Main grid options. */
+    /* Opcje grida dla małej rozdzielczości. */
     .grid-container {
-        position: fixed;
-        top: 1%;
-        left: 1%;
-        right: 1%;
-        bottom: 1%;
-
         grid-template-columns: 1fr;
         grid-template-rows: min-content 100vh 50vh 50vh min-content 100vh;
-
-        display: grid;
-        gap: 5px;
-        background-color: transparent;
-        padding: 10px;
 
         overflow: scroll;
     }
 
-    /* .grid-item {
-        background-color: transparent;
-        background-color: var(--background-menu);
-        color: var(--text-color);
-        text-align: center;
-        padding: 5px;
-        font-size: medium;
-    } */
-
     .grid-item-menu-bar {
-        background-color: transparent;
-        padding: 0;
-        font-size: x-large;
         grid-column: 1;
         grid-row: 1;
     }
@@ -259,38 +235,25 @@ details[open]>summary:before {
     .grid-item-file-structure {
         grid-column: 1;
         grid-row: 4;
-        overflow: scroll;
     }
 
     .grid-item-bookmarks {
-        background-color: transparent;
-        padding: 0;
         grid-column: 1;
         grid-row: 5;
     }
 
     .grid-item-code-fragment {
-        background-color: var(--code-background-color);
-        padding: 10px;
-        text-align: left;
         grid-column: 1;
         grid-row: 3;
     }
 
     .grid-item-code {
-        background-color: var(--code-background-color);
-        padding: 10px;
-        text-align: left;
-        text-align: left;
         grid-column: 1;
         grid-row: 2;
     }
 
     .grid-item-options {
-        font-size: medium;
-        text-align: left;
         grid-column: 1;
         grid-row: 6;
-        overflow: scroll;
     }
 }
