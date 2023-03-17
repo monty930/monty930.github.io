@@ -217,10 +217,3 @@ details[open]>summary:before {
 .folder p {
     margin: 0;
 }
-
-.mobile-display{display:none}
-.desktop-display{display:block}
-@media (max-width:800px){
-.desktop-display {display:none}
-.mobile-display {display:block}
-}
