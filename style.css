@@ -218,7 +218,7 @@ details[open]>summary:before {
     margin: 0;
 }
 
-@media screen {
+@media screen and (max-width: 200px) {
 
     /* Main grid options. */
     .grid-container {
@@ -268,7 +268,7 @@ details[open]>summary:before {
     }
 
     .grid-item-code-fragment {
-        background-color: red;
+        background-color: var(--code-background-color);
         padding: 10px;
         text-align: left;
         grid-column: 3;
@@ -276,7 +276,7 @@ details[open]>summary:before {
     }
 
     .grid-item-code {
-        background-color: var(--code-background-color);
+        background-color: red
         padding: 10px;
         text-align: left;
         text-align: left;
@@ -292,13 +292,3 @@ details[open]>summary:before {
         overflow: scroll;
     }
 }
-
-/* .mobileShow { display: none;} */
-
-/* Smartphone Portrait and Landscape */
-
-/* @media only screen
-
-and (min-device-width : 320px)
-
-and (max-device-width : 480px){ .mobileShow { display: inline;}} */
