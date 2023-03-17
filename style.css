@@ -218,7 +218,7 @@ details[open]>summary:before {
     margin: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen {
 
     /* Main grid options. */
     .grid-container {
